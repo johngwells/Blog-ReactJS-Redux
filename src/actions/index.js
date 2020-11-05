@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import jsonPlaceholder from '../api/jsonPlacholder';
 
+// getState gets access to all the data from redux
 export const fetchPostsAndUsers = () => async (dispatch, getState) => {
   await dispatch(fetchPosts());
 
